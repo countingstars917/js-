@@ -2,7 +2,7 @@ import execjs
 # print(execjs.get())
 
 
-with open('需要执行的js代码.js','r') as f:
+with open('3.pyexec执行的js代码.js', 'r') as f:
     jscode = f.read()
 
 #第一种执行方法，使用js.call('函数名'，参数1，参数2，*)
