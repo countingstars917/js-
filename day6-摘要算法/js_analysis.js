@@ -1,6 +1,5 @@
-//七麦数据a参数算法
 //函数定义
-let n;
+
 function o(n) {
         t = "",
             ['66', '72', '6f', '6d', '43', '68', '61', '72', '43', '6f', '64', '65']["forEach"](function (n) {
@@ -21,17 +20,18 @@ function p(t) {
         });
         return btoa(t)
     }
-function s(n) {
-        var n = new RegExp("(^| )" + "synct" + "=([^;]*)(;|$)");
-        return (n = document.cookie.match(n)) ? unescape(n[2]) : null
-    };
 
-function analysis(dict, cookie) {
+
+function analysis(dict, cookies) {
     var a = []   //定义空列表
     b = dict            //接收传参
     document = {}       //定义DOM对象，接收cookie参数
-    document.cookie = cookie
+    document.cookie = cookies
     let n;
+    function s(n) {
+        var n = new RegExp("(^| )" + "synct" + "=([^;]*)(;|$)");
+        return (n = document.cookie.match(n)) ? unescape(n[2]) : null
+    };
     var s = undefined = -s("syncd") || +new Date() - 1000 * n // s参数只有在页面刷新的时候根据算法生成
     var e, r = +new Date() - (s || 0) - 1661224081041
     r = Math.trunc(r)
@@ -43,6 +43,7 @@ function analysis(dict, cookie) {
     a = a["sort"]()["join"]("")
     a = p(a)
     a = (a += "@#" + "/rank/index"["replace"]("https://api.qimai.cn", "")) + ("@#" + r) + ("@#" + 3)
-    console.log(a)
-    return a
+    e=p(h(a,"xyz517cda96efgh"))
+    return e
 }
+
