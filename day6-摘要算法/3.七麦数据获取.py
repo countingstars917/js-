@@ -41,7 +41,7 @@ for i in range(1, 10):
     parsed_url = urlparse(base_url)
     query_params_list = parse_qsl(parsed_url.query)
     params_dict = dict(query_params_list[1:])
-    with open('js_analysis.js', 'r', encoding='utf-8') as f:
+    with open('2.s_analysis.js', 'r', encoding='utf-8') as f:
         jscode = f.read()
     js = execjs.compile(jscode)
     cookies_str = '; '.join([f"{key}={value}" for key, value in cookies.items()])
